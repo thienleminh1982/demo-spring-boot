@@ -1,0 +1,7 @@
+---
+applications:
+- name: lmt-demo-spring-boot
+  memory: 512M
+  host: lmt-demo-spring-boot
+  domain: cfapps.io
+  path: target/demo-0.0.1-SNAPSHOT.jar
