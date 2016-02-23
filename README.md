@@ -1,4 +1,4 @@
-# Pre-work - *demo-spring-boot*
+# *demo-spring-boot*
 
 ## Description
 **demo-spring-boot** is a Spring Boot web application (stand-alone JAR file)
@@ -10,11 +10,6 @@ Build in local:
 Run in local: 
 	mvn spring-boot:run
 	
-Add the deploy manifest file: **manifest.yml**	
-Deploy to Pivotal Webservices. [Instruction](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cloud-deployment)
-	cf login
-	cf push lmt-demo-spring-boot -p target/demo-0.0.1-SNAPSHOT.jar
-
 Submitted by: **Minh-Thien Le**
 
 Time spent: **** hours spent in total
@@ -37,9 +32,22 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 * mvn dependency:tree to see the dependency tree
-* Deploy status: OK
+* Deploy to PWS: OK
+* Deploy to Heroku: OK . 
+======================================================================================
+## Deployment details
+### PWS
+Add the deploy manifest file: **manifest.yml**	
+Deploy to Pivotal Webservices. 
+[Instruction](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cloud-deployment)
+	cf login
+	cf push lmt-demo-spring-boot -p target/demo-0.0.1-SNAPSHOT.jar
 
-
+### Heroku
+Add the deploy manifest file: **Procfile**		
+[Instruction](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)	
+	
+	
 ## License
 
     Copyright 2015 Minh-Thien Le
